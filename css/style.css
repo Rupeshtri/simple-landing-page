@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Golos+Text:wght@400;500;600;700;800;900&family=Libre+Baskerville:wght@700&family=Mukta:wght@300&family=PT+Sans&family=Roboto:wght@300&family=Rubik+Gemstones&family=Source+Sans+Pro:wght@700&family=Ubuntu:ital,wght@0,300;1,300&display=swap');
+
+:root {
+    --my-fonts: 'Golos Text', sans-serif;
+}
+
+
+
+
+/* Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* core stylings */
+/* which is very minimum stylings */
+img{
+    width: 100%;
+    height: 100%;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+/* utility classes : set of reusable classes*/
+.active-link{
+    color: #000 !important;
+}
+
+.btn-primary{
+    background: #07193A;
+    color: #fff;
+    padding: 1.25rem 2.25rem;
+    border-radius:30px;
+    border: 1px solid #000;
+    font-weight: 600;
+    transition: 0.2s all;
+}
+.btn-secondary{
+    color: #07193A;
+    padding: 1.25rem 2.25rem;
+    border-radius:30px;
+    border: 1px solid #000;
+    font-weight: 600;
+    transition: 0.2s all;
+}
+
+.btn-primary:hover{
+    background: #fff;
+    color: #000 !important;
+}
+
+.container{ 
+    max-width: 1200px;
+    margin: auto;
+    padding:0 1.25rem ;
+}
+
+
+/* header */
+header{
+    display: flex;
+    flex-direction: row;/* main-axis */
+    justify-content: space-around; 
+    align-items: center;/* cross-axis */
+}
+
+
+header .logo{
+    max-width: 120px;
+}
+
+
+header .nav-links a{
+    margin-left: 35px;
+    font-family: var(--my-fonts);
+    color: #999;
+    font-weight: 500;
+}
+
+
+header .nav-links a:last-child{
+    margin-left: 100px;
+    margin-right: 20px;
+}
+
+/* section: hero */
+
+#hero{
+    margin-top: 3.5rem;
+}
+
+
+#hero .hero-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+#hero .hero-container .hero-title{
+    font-family: var(--my-fonts);
+    color: #010e2d;
+}
+
+#hero .hero-container .hero-text{
+    font-family: var(--my-fonts);
+    margin-top: 1.25rem;
+    line-height: 1.7;
+    color: #999;
+}
+
+#hero .hero-container .buttons-container{
+    margin-top: 2rem;
+}
+
+#hero .hero-container .buttons-container a:nth-child(2) {
+    margin-left: .5rem;
+}
+
+/* section:brands */
+#brands{
+    margin-top: 8rem;
+}
+
+#brands .brands-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    grid-gap: 20px;
+}
+
+#brands .brands-container .img-container{
+    max-width: 100px;
+    background: #999;
+}
